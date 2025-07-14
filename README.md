@@ -1,105 +1,88 @@
-# RUSSIAN VERSION
+Telegram Roulette Bot 🎰
 
-# Telegram Roulette Bot 🎰
+🇷🇺 Описание / 🇬🇧 Description
 
-Простой Telegram-бот с игрой в рулетку, реализованный на Python с использованием библиотеки `aiogram`. Бот использует `SQLite` для хранения данных о пользователях и их попытках.
+🇷🇺 Простой Telegram-бот с игрой в рулетку, реализованный на Python с использованием библиотеки aiogram. Бот использует SQLite для хранения данных о пользователях и их попытках.
 
-## ✨ Возможности
+🇬🇧 A simple Telegram bot with a roulette game, implemented in Python using the aiogram library. The bot uses SQLite to store data about users and their attempts.
 
--   **Система рулетки**: Пользователи могут крутить рулетку, чтобы выиграть случайный приз.
--   **Система попыток**: Каждый пользователь имеет ограниченное количество попыток (по умолчанию 3).
--   **База данных**: Используется SQLite для надежного хранения данных.
--   **Админ-панель**: Администратор может добавлять попытки любому пользователю с помощью специальной команды.
--   **Инлайн-кнопки**: Удобный интерфейс с кнопкой "Крутить".
+✨ Возможности / ✨ Features
 
-## 🛠️ Установка и запуск
+    🇷🇺 Система рулетки: Пользователи могут крутить рулетку, чтобы выиграть случайный приз.
 
-1.  **Клонируйте репозиторий:**
-    ```bash
-    git clone [https://github.com/your-username/telegram-roulette-bot.git](https://github.com/your-username/telegram-roulette-bot.git)
-    cd telegram-roulette-bot
-    ```
+    🇬🇧 Roulette System: Users can spin the roulette to win a random prize.
 
-2.  **Установите зависимости:**
-    Рекомендуется использовать виртуальное окружение.
-    ```bash
-    pip install aiogram
-    ```
+    🇷🇺 Система попыток: Каждый пользователь имеет ограниченное количество попыток (по умолчанию 3).
 
-3.  **Настройте конфигурацию:**
-    -   Откройте файл `telegram_bot/cfg.py`.
-    -   Вставьте токен вашего бота в переменную `BOT_TOKEN`. Вы можете получить его у [@BotFather](https://t.me/BotFather).
-    -   Укажите свой Telegram User ID в переменной `ADMIN_ID`. Вы можете узнать его у [@userinfobot](https://t.me/userinfobot).
+    🇬🇧 Attempt System: Each user has a limited number of attempts (default is 3).
 
-4.  **Запустите бота:**
-    ```bash
+    🇷🇺 База данных: Используется SQLite для надежного хранения данных.
+
+    🇬🇧 Data Storage: Uses SQLite for reliable data storage.
+
+    🇷🇺 Админ-панель: Администратор может добавлять попытки любому пользователю с помощью специальной команды.
+
+    🇬🇧 Admin Panel: An administrator can add attempts to any user with a special command.
+
+    🇷🇺 Инлайн-кнопки: Удобный интерфейс с кнопкой "Крутить".
+
+    🇬🇧 Inline Buttons: A user-friendly interface with a "Spin" button.
+
+🛠️ Установка и запуск / 🛠️ Installation and Launch
+
+    🇷🇺 Клонируйте репозиторий / 🇬🇧 Clone the repository:
+    Bash
+
+git clone https://github.com/your-username/telegram-roulette-bot.git
+cd telegram-roulette-bot
+
+🇷🇺 Установите зависимости / 🇬🇧 Install dependencies: (Рекомендуется использовать виртуальное окружение / Virtual environment recommended)
+Bash
+
+pip install aiogram
+
+🇷🇺 Настройте конфигурацию / 🇬🇧 Configure the settings: Откройте файл telegram_bot/cfg.py.
+
+    🇷🇺 Токен бота: Вставьте токен вашего бота в BOT_TOKEN (получите у @BotFather).
+
+    🇬🇧 Bot Token: Insert your bot's token into the BOT_TOKEN variable (get it from @BotFather).
+
+    🇷🇺 ID админа: Укажите свой Telegram User ID в ADMIN_ID (узнайте у @userinfobot).
+
+    🇬🇧 Admin ID: Specify your Telegram User ID in the ADMIN_ID variable (find it by messaging @userinfobot).
+
+🇷🇺 Запустите бота / 🇬🇧 Launch the bot:
+Bash
+
     python telegram_bot/main.py
-    ```
 
-## ⚙️ Как пользоваться
+⚙️ Как пользоваться / ⚙️ How to Use
 
--   **/start**: Начать взаимодействие с ботом, получить приветственное сообщение и клавиатуру для игры.
--   **Кнопка "Крутить рулетку!"**: Нажмите, чтобы потратить одну попытку и получить случайный приз.
--   **/add_attempts \[user_id] \[количество]**: (Только для админа) Добавляет указанное количество попыток пользователю с заданным `user_id`.
+    🇷🇺 /start: Начать взаимодействие с ботом, получить приветственное сообщение и клавиатуру для игры.
 
-## ✏️ Кастомизация
+    🇬🇧 /start: Start interacting with the bot, receive a welcome message and the game keyboard.
 
-Этот бот создан как легко редактируемая основа. Вы можете легко изменить:
--   **Список призов**: Отредактируйте список `PRIZES` в файле `main.py`.
--   **Количество попыток по умолчанию**: Измените значение `DEFAULT 3` в `db.py`.
--   **Тексты сообщений**: Все тексты находятся в `main.py` и могут быть легко изменены.
+    🇷🇺 Кнопка "Крутить рулетку!": Нажмите, чтобы потратить одну попытку и получить случайный приз.
 
----
----
----
+    🇬🇧 "Spin the roulette!" button: Press to spend one attempt and get a random prize.
 
-# ENGLISH VERSION
+    🇷🇺 /add_attempts [user_id] [количество]: (Только для админа) Добавляет указанное количество попыток пользователю с заданным user_id.
 
-# Telegram Roulette Bot 🎰
+    🇬🇧 /add_attempts [user_id] [amount]: (Admin only) Adds the specified number of attempts to the user with the given user_id.
 
-A simple Telegram bot with a roulette game, implemented in Python using the `aiogram` library. The bot uses `SQLite` to store data about users and their attempts.
+✏️ Кастомизация / ✏️ Customization
 
-## ✨ Features
+🇷🇺 Этот бот создан как легко редактируемая основа. Вы можете легко изменить:
+🇬🇧 This bot is designed as an easily editable foundation. You can easily change:
 
--   **Roulette System**: Users can spin the roulette to win a random prize.
--   **Attempt System**: Each user has a limited number of attempts (default is 3).
--   **Database**: Uses SQLite for reliable data storage.
--   **Admin Panel**: An administrator can add attempts to any user with a special command.
--   **Inline Buttons**: A user-friendly interface with a "Spin" button.
+    🇷🇺 Список призов: Отредактируйте список PRIZES в файле main.py.
 
-## 🛠️ Installation and Launch
+    🇬🇧 List of prizes: Edit the PRIZES list in main.py.
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/your-username/telegram-roulette-bot.git](https://github.com/your-username/telegram-roulette-bot.git)
-    cd telegram-roulette-bot
-    ```
+    🇷🇺 Количество попыток по умолчанию: Измените значение DEFAULT 3 в db.py.
 
-2.  **Install dependencies:**
-    It is recommended to use a virtual environment.
-    ```bash
-    pip install aiogram
-    ```
+    🇬🇧 Default number of attempts: Change the DEFAULT 3 value in db.py.
 
-3.  **Configure the settings:**
-    -   Open the `telegram_bot/cfg.py` file.
-    -   Insert your bot's token into the `BOT_TOKEN` variable. You can get it from [@BotFather](https://t.me/BotFather).
-    -   Specify your Telegram User ID in the `ADMIN_ID` variable. You can find it by messaging [@userinfobot](https://t.me/userinfobot).
+    🇷🇺 Тексты сообщений: Все тексты находятся в main.py и могут быть легко изменены.
 
-4.  **Launch the bot:**
-    ```bash
-    python telegram_bot/main.py
-    ```
-
-## ⚙️ How to Use
-
--   **/start**: Start interacting with the bot, receive a welcome message and the game keyboard.
--   **"Spin the roulette!" button**: Press to spend one attempt and get a random prize.
--   **/add_attempts \[user_id] \[amount]**: (Admin only) Adds the specified number of attempts to the user with the given `user_id`.
-
-## ✏️ Customization
-
-This bot is designed as an easily editable foundation. You can easily change:
--   **List of prizes**: Edit the `PRIZES` list in `main.py`.
--   **Default number of attempts**: Change the `DEFAULT 3` value in `db.py`.
--   **Message texts**: All texts are in `main.py` and can be easily modified.
+    🇬🇧 Message texts: All texts are in main.py and can be easily modified.

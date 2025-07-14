@@ -31,8 +31,8 @@
 
 1.  **🇷🇺 Клонируйте репозиторий / 🇬🇧 Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/telegram-roulette-bot.git](https://github.com/your-username/telegram-roulette-bot.git)
-    cd telegram-roulette-bot
+    git clone https://github.com/avielienna/roulette-telegram.git
+    cd roulette-telegram
     ```
 
 2.  **🇷🇺 Установите зависимости / 🇬🇧 Install dependencies:**
@@ -42,7 +42,7 @@
     ```
 
 3.  **🇷🇺 Настройте конфигурацию / 🇬🇧 Configure the settings:**
-    Откройте файл `telegram_bot/cfg.py`.
+    Откройте файл `roulette-telegram/cfg.py`.
     * **🇷🇺 Токен бота:** Вставьте токен вашего бота в `BOT_TOKEN` (получите у [@BotFather](https://t.me/BotFather)).
     * **🇬🇧 Bot Token:** Insert your bot's token into the `BOT_TOKEN` variable (get it from @BotFather).
     * **🇷🇺 ID админа:** Укажите свой Telegram User ID в `ADMIN_ID` (узнайте у [@userinfobot](https://t.me/userinfobot)).
@@ -50,7 +50,7 @@
 
 4.  **🇷🇺 Запустите бота / 🇬🇧 Launch the bot:**
     ```bash
-    python telegram_bot/main.py
+    python roulette-telegram/main.py
     ```
 
 ---
